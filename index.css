@@ -1,0 +1,577 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@600&family=PT+Serif&display=swap');
+
+body{
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
+.topBar{
+    display:flex;
+    flex-flow: row wrap;
+    align-items: center;
+    background-color:gold;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+.topBar>.logo{
+font-family: 'Belanosima', sans-serif;
+font-family: 'PT Serif', serif;
+font-size: 5vh;
+font-weight:bolder;
+padding:3vh;
+}
+
+.logo>a{
+    text-decoration: none;
+    color:black;
+}
+
+.topBar>.navBar{
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-between;
+width:50%;
+}
+
+.navBar>button{
+    color:black;
+    font-family: 'Belanosima', sans-serif;
+font-family: 'PT Serif', serif;
+text-decoration: none;
+width:25%;
+text-align: center;
+border-top-left-radius: 3vh;
+border-top-right-radius: 3vh;
+border-bottom-right-radius: 3vh;
+border-bottom-left-radius: 3vh;
+padding-top:1vh;
+padding-bottom:1vh;
+background: none;
+border:none;
+font-weight: bolder;
+font-size: 3vh;
+}
+
+.navBar>button:hover{
+    animation-name: aHover;
+    animation-duration: 0.7s;
+    animation-delay:0.1s;
+    animation-fill-mode: forwards;
+}
+.topBar>.ham{
+    display: none;
+    /* width:max-content; */
+    margin-right: 3vw;
+    top:3vh;
+    margin-right:5vh;
+    /* border:1px solid black; */
+}
+
+.ham>img[src='ham.png']{
+    height:5vh;
+    border:1px solid black;
+    border-radius: 4px;
+}
+@keyframes aHover {
+    0%{
+        background-color: rgba(0, 0, 0, 0);
+    }
+    100%{
+        background-color: black;
+        color:white;
+    }
+}
+#hamMenu{
+    display: none;
+    flex-flow: column wrap;
+    background-color: rgb(255, 217, 2);
+    width: 100vw;
+    align-items: center;
+    border-bottom: 5px solid black;
+}
+#hamMenu>button{
+    font-family: 'Belanosima', sans-serif;
+    font-family: 'PT Serif', serif;
+    background-color: black;
+    color:white;
+    font-size: 3vh;
+    padding: 2vh;
+    font-weight: bold;
+    border: none;
+    border-bottom:1px solid gold;
+    width:100vw;
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+}
+
+#loginBar{
+    position: absolute;
+    display: flex;
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.76);
+    color: white;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.loginSignupGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width:50%;
+    margin-top: 3vh;
+    
+}
+
+.login,.signup{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width:100%;
+}
+
+.login>button,.signup>button{
+    width:100%;
+background-color: gold;
+border: 4px solid gold;
+font-family: 'Belanosima', sans-serif;
+font-family: 'PT Serif', serif;
+border: 1px solid black;
+font-size: 3vh;
+font-weight: bold;
+padding:1vh;
+}
+
+#loginBox{
+    grid-column: 1/span 2;
+    height: 66vh;
+    display: flex;
+}
+#loginBox>form{
+    border: 1px solid gold;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around;
+    height: 80%;
+  border-bottom-left-radius: 2vh;
+  border-bottom-right-radius: 2vh;
+  padding: 3vh;
+  width: 100%;
+}
+#loginBox>form>input{
+    width:80%;
+    font-size: 3vh;
+    padding: 2vh;
+    font-family: 'Belanosima', sans-serif;
+font-family: 'PT Serif', serif;
+font-weight: bold;
+border-radius: 2vh;
+}
+
+#loginBox>form>input[type='checkbox']{
+    height: 4vh;
+    background-color: gold;
+}
+#loginBox>form>label{
+    font-family: 'Belanosima', sans-serif;
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+    border-radius: 2vh;
+}
+#loginBox>form>input[type='submit'],#loginBox>form>input[type='reset']{
+    background-color: rgba(255, 217, 0, 0);
+    width: 20vh;
+    border: none;
+    margin-top: 1vh;
+    border:1px solid gold;
+    color: white;
+
+}
+
+#loginBox>form>input[type='submit']:hover,#loginBox>form>input[type='reset']:hover{
+background-color: gold;
+color:black
+}
+
+#signinBox{
+    grid-column: 1/span 2;
+    height: 66vh;
+    display: flex;
+}
+
+#signinBox>form{
+    border:1px solid gold;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+width:100%;
+height: 90%;
+    justify-content: space-around;
+    border-bottom-left-radius: 2vh;
+    border-bottom-right-radius: 2vh;
+}
+#signinBox>form>input{
+    width:80%;
+    font-size: 3vh;
+    padding: 2vh;
+    font-family: 'Belanosima', sans-serif;
+font-family: 'PT Serif', serif;
+font-weight: bold;
+border-radius: 2vh;
+}
+#signinBox>form>input[type='submit'],#signinBox>form>input[type='reset']{
+    background-color: rgba(255, 217, 0, 0);
+    width: 20vh;
+    border: none;
+    margin-top: 1vh;
+    border:1px solid gold;
+    color: white;
+
+}
+
+#loginBox>form>input[type='submit']:hover,#loginBox>form>input[type='reset']:hover{
+background-color: gold;
+color:black
+}
+
+#signinBox>form>input[type='submit']:hover,#signinBox>form>input[type='reset']:hover{
+    background-color: gold;
+    color:black
+    }
+.banner{
+    background-color: gold;
+    height:auto;
+    border-bottom: 1px solid black;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+
+
+
+.banner>.grid_left>.slogan{
+    font-family: 'Belanosima', sans-serif;
+    font-family: 'PT Serif', serif;
+    font-size: 12vh;
+    width:60%;
+    padding-top: 2vh;
+    margin-left: 4vh;
+
+}
+
+.banner>.grid_left>.sloganLine{
+    font-family: 'Belanosima', sans-serif;
+    font-family: 'PT Serif', serif;
+    margin-left:3vw;
+    width:50%;
+    margin-top:3vh;
+    font-size: 3vh;
+    /* margin-left: auto;
+margin-right:auto; */
+}
+
+.banner>.grid_left>.getStarted{
+background-color: black;
+color:white;
+width:40%;
+text-align: center;
+/* margin-left: auto;
+margin-right:auto; */
+padding:1vh;
+font-size: 1.8vw;
+margin-bottom: 3vh;
+border-top-left-radius: 3vh;
+border-top-right-radius: 3vh;
+border-bottom-right-radius: 3vh;
+border-bottom-left-radius: 3vh;
+text-decoration: none;
+margin-top:3vw;
+margin-left: auto;
+margin-right: auto;
+font-size: 3vh;
+}
+
+
+img[src='gandhi.png'],img[class="pic"]{
+    height: 30vw;
+    margin-top:-2vh;
+}
+.quote{
+    display: inline-block;
+    font-family: 'Belanosima', sans-serif;
+    font-family: 'PT Serif', serif;
+    font-size: 3vh; 
+    width:80%;
+}
+.name{
+    display: inline-block;
+    font-size: 3vh;
+}
+@media screen and (max-width:900px){
+    #loginBar{
+        margin-top: 43vh;
+    }
+    .topBar{
+        display: flex;
+        flex-flow: row wrap;
+        height:max-content;
+        width:100%;
+    }
+    .navBar{
+        display: none;
+    }
+    .navBar>button{
+        display: none;
+    }
+
+    .topBar>.ham{
+        display: block;
+        position: absolute;
+        right: 0;
+
+    }
+    .topBar>.logo{
+        font-size: 3vh;
+    }
+    .banner{
+        height:max-content;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: auto;
+        
+    }
+    .banner>.grid_left>.slogan{
+        width:95%;
+        font-size: 7vh;
+    }
+    .banner>.grid_left>.sloganLine{
+        margin-left:auto;
+        margin-right:auto;
+        text-align: center;
+width:95%;
+    }
+    .grid_right{
+        width:100%;
+        display: flex;
+        text-align: center;
+    }
+    .banner>.getStarted{
+        margin-left:auto;
+        margin-right:auto;
+        margin-bottom: 6vw;
+    }
+    .quote{
+        text-align: center;
+    }
+    img[src='gandhi.png']{
+        height: 25vh;
+    }
+}
+.getStarted:hover{
+    cursor: pointer;
+}
+
+.contentBody{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:3vw;
+    margin-top: 3vw;
+}
+
+
+.contentBody>.left_content>.title{
+    font-family: 'Belanosima', sans-serif;
+font-family: 'PT Serif', serif;
+font-size: 5vh;
+font-weight: bolder;
+width:90%;
+margin-left:2vw;
+}
+
+.contentBody>.left_content>.author{
+    margin-left:20vw;
+    font-size: 4vh;
+    color: rgb(78, 77, 77);
+    margin-top:-0.4vw;
+}
+
+.contentBody>.left_content>.article{
+    font-family: 'Belanosima', sans-serif;
+    font-family: 'PT Serif', serif;
+    font-size: 3vh;
+    width:90%;
+    margin-left: 3vw;
+    margin-top: 3vw;
+}
+
+.toggleView{
+    width: 100%;
+    height: 6vh;
+    border: none;
+    background-color:rgb(219, 215, 215);
+    /* background-color: white; */
+    box-shadow: 0vw -5vw 4vw rgb(255, 255, 255) ;
+    font-family: 'Belanosima', sans-serif;
+    font-family: 'PT Serif', serif;
+    font-size: 2.5vh;
+    font-weight: bolder;
+    padding:1vw;
+    border-bottom-left-radius: 3vw;
+    border-bottom-right-radius: 3vw;
+}
+
+.toggleView:hover{
+    cursor: pointer;
+}
+.hiddenPara{
+    display: none;
+}
+
+.showButton{
+    box-shadow: 0vw -5vw 4vw rgb(255, 255, 255);
+    margin-bottom: 7vw;
+}
+#hideButton{
+    display: none;
+    box-shadow: none;
+    margin-top:0vw;
+    margin-bottom: 3vw;
+}
+.contentBody>.right_content{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+@media screen and (max-width:900px) {
+    body{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    .contentBody{
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+        align-self: center;
+        width:80vw;
+        grid-gap:0vw;
+       
+    }
+    .contentBody>.left_content>.title{
+        font-size: 4vh;
+    }
+    .contentBody>.left_content>.author{
+        font-size: 3.5vh;  
+    }
+}
+
+
+
+img[src='trending.png']{
+    height: 4vh;
+}
+
+/* .trendingSec{
+    margin-top:3vw;
+} */
+.trendingTitle{
+    font-size: 3vh;
+    text-align: center;
+}
+
+img[src='reading.jpg'],img[src='leadership.jpg'],img[src='karate.jpg'],img[src='ai.jpeg'],img[src='male.jpg']{
+    height:19vh;
+    margin-right: 3vw;
+}
+img[src='karate.jpg']{
+    margin-left: 9vw;
+}
+.trendingGrid{
+    margin-top: 4vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap:3vw;
+}
+@media screen and (max-width:900px){
+    .trendingGrid{
+        grid-template-columns: auto;
+        text-align: center;
+
+    }
+    .grid_right{
+        margin-top: -4vw;
+    }
+}
+.topicInfo{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    font-family: 'Belanosima', sans-serif;
+    font-family: 'PT Serif', serif;
+}
+
+.topicAuthor{
+    font-size: 2.3vh;
+    font-family: 'Belanosima', sans-serif;
+    font-family: 'PT Serif', serif;
+}
+
+.topicName{
+    font-weight: bolder;
+    font-size: 3vh;
+}
+
+.topicDesc{
+    color:rgb(87, 84, 84);
+}
+
+.discoverSec{
+    display: flex;
+    flex-flow: column wrap;
+    font-family: 'Belanosima', sans-serif;
+    font-family: 'PT Serif', serif;
+    font-size: 3vh;
+    text-align: center;
+    margin-top: 5vw;
+}
+
+.discoverSec>.discoverTitle{
+    font-weight: bold;
+}
+
+.discoverSec>.discoverGrid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:1vw;
+    margin-top: 2vw;
+
+}
+
+.discoverGrid>div{
+    background-color: rgb(233, 225, 225);
+    border-top-left-radius: 3vh;
+border-top-right-radius: 3vh;
+border-bottom-right-radius: 3vh;
+border-bottom-left-radius: 3vh;
+font-size: 2.7vh;
+padding: 0.7vw;
+}
+
+@media screen and (max-width:900px){
+    .discoverSec>.discoverGrid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    font-family: 'Belanosima', sans-serif;
+    font-family: 'PT Serif', serif;
+    font-size: 4vh;
+    text-align: center;
+    margin-top: 5vh;
+    width:100%;
+}

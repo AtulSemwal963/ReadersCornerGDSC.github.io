@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reader's Corner</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class=" topBar">
+        <div class="logo">
+            <a href="index.html">
+                Reader's Corner
+            </a>
+        </div>
+        <div class="navBar">
+            <button >Our Story</button>
+            <button >Membership</button>
+            <button >Write</button>
+            <button onclick="loginMenu()">Login</button>
+        </div>
+        <div class="ham" onclick="toggleMenu()">
+            <img src="ham.png">
+        </div>
+    </div>
+    <div  id="hamMenu">
+        <button>Our Story</button>
+        <button>Membership</button>
+        <button>Write</button>
+        <button onclick="loginMenu()">Login</button>
+    </div>
+    <div class="loginBar" id="loginBar" style="display:none">
+        <div class="loginSignupGrid">
+            <div class="login">
+                <button id='loginButton' onclick="showSignUpBox()">Sign Up</button>
+            </div>
+            <!-- loginButton.style.backgroundColor='gold'
+            loginButton.style.color='black'
+        loginButton.style.backgroundColor='rgba(0, 0, 0, 0.76)' 
+    loginButton.style.color='white'-->
+            <div class="signup">
+                <button id="signupButton" onclick="showSignInBox()" style="background-color:rgba(0, 0, 0, 0.76) ; color:white;">Sign In</button>
+            </div>
+              <!-- signupButton.style.backgroundColor='gold'
+            signupButton.style.color='black'
+        signupButton.style.backgroundColor='rgba(0, 0, 0, 0.76)' 
+    signupButton.style.color='white'-->
+            <div id="loginBox">
+                <form>
+                    <input type="text" placeholder="Enter Your Name">
+                    <input type="email" placeholder="Enter you Email">
+                    <input type="password"
+                    placeholder="Enter Password">
+                    <input type="checkbox" id="rememberMe">
+                    <label for="rememberMe">Remember Me</label>
+                    <input type="submit" id="submit" >
+                    <input type="reset" id="reset">
+                </form>
+            </div>
+            <div id="signinBox" style="display:none" >
+                <form>
+                    <input type="text" placeholder="Please Enter your Username">
+                    <input type="password" placeholder="Please Enter your Password">
+                    <input type="submit">
+                    <input type="reset">
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="banner">
+        <div class="grid_left">
+            <div class="slogan">Read to your heart's content</div>
+            <div class="sloganLine">Discover stories, thinking, and expertise from writers on any topic</div>
+            <div class="getStarted">
+                Get Started
+            </div>
+        </div>
+        <div class="grid_right">
+            <div id="tile1">
+                <div class="photo">
+                    <img src="gandhi.png" class="pic">
+                </div>
+                <div class="quote">
+                   " Live as if you were to die tomorrow. Learn as if you were to live forever."
+                </div>
+                <div class="name">~Mahatma Gandhi</div>
+            </div>
+        </div>
+    </div>
+    <div class="contentBody">
+        <div class="left_content">
+            <div class="title">
+                Embracing Stoicism: Finding Resilience and Tranquility in Modern Life
+            </div>
+            <div class="author">
+                ~John Doe
+            </div>
+            <div class="article">
+                <p>
+                In today's fast-paced and unpredictable world, ancient philosophies often provide timeless wisdom that resonates with contemporary challenges. One such philosophy is Stoicism, a school of thought that originated in ancient Greece and found its zenith in Rome. Stoicism offers a profound and practical approach to life, emphasizing resilience, virtue, and tranquility in the face of life's inevitable ups and downs.</p>
+
+<p>Stoic Foundations
+
+Stoicism, founded by Zeno of Citium around 300 BCE, found its greatest proponents in philosophers like Seneca, Epictetus, and Marcus Aurelius. At its core, Stoicism posits that while we may not control external events, we have complete control over our reactions to them. This philosophy encourages individuals to cultivate inner strength and moral virtues as the path to a fulfilled life.</p>
+
+<p>Virtue as the Highest Good
+
+One of Stoicism's fundamental tenets is that virtue is the highest good. Stoics believe that the key to a fulfilling and meaningful life is the cultivation of moral and intellectual virtues. These virtues include wisdom, courage, justice, temperance, and self-discipline.
+
+By emphasizing virtue as the ultimate goal, Stoicism guides individuals to make ethical choices in every aspect of life. It challenges us to act with integrity, even when faced with adversity or temptation. In Stoic philosophy, true happiness is not found in material possessions or fleeting pleasures but in our ability to lead a virtuous life.</p>
+
+<p>The Dichotomy of Control
+
+One of the most powerful concepts in Stoicism is the dichotomy of control. It distinguishes between things we can control and those we cannot. Stoics believe that we should focus our energy and attention on what is within our sphere of influence and accept with equanimity what lies beyond it.
+
+For example, we can control our actions, choices, and attitudes, but we cannot control external events, other people's opinions, or the weather. By internalizing this fundamental concept, we become more adept at managing life's uncertainties and less susceptible to external turmoil.</p>
+<button id="showButton" style="box-shadow: 0vw -5vw 4vw rgb(255, 255, 255) "class="toggleView" onclick="showMore()">Show More</button>
+<p class="hiddenPara" id="hPara1">Resilience in the Face of Adversity
+
+Stoicism provides invaluable tools for resilience in the face of adversity. It encourages us to reframe challenges as opportunities for growth. The Stoic practice of negative visualization involves contemplating the loss of what we have. By envisioning worst-case scenarios, we prepare ourselves mentally and emotionally for life's inevitable setbacks.
+
+This practice is not about dwelling on negativity but about developing gratitude for the present moment and a greater appreciation for what we have. It helps us avoid unnecessary anxieties and cultivate a sense of contentment.</p>
+
+<p class="hiddenPara" id="hPara2">The Pursuit of Eudaimonia
+
+Stoicism also places great importance on the pursuit of eudaimonia, often translated as "flourishing" or "living in accordance with virtue." Eudaimonia is not the pursuit of fleeting pleasures but the cultivation of a life well-lived through virtuous actions.
+
+Stoics argue that eudaimonia is the natural outcome of living in harmony with one's rational and moral nature. It's not the absence of pain but the presence of virtue that leads to true flourishing. By aligning our actions with our values, we find meaning and fulfillment in our lives.</p>
+
+<p class="hiddenPara" id="hPara3">Applying Stoicism in Modern Life
+
+The timeless wisdom of Stoicism is as relevant today as it was in ancient times. In our modern, fast-paced world, the Stoic principles of resilience and self-control can help us navigate the challenges of daily life.</p>
+
+<p class="hiddenPara" id="hPara4">Resilience: Stoicism teaches us to face adversity with courage and equanimity. When we encounter setbacks, whether in our personal or professional lives, we can choose to view them as opportunities for growth. By maintaining our composure and focusing on what we can control, we can weather life's storms with grace.</p>
+
+<p class="hiddenPara" id="hPara5">Self-Control: In a world filled with distractions and temptations, Stoicism reminds us of the importance of self-discipline. By practicing self-control and moderation, we can avoid impulsive decisions and live in alignment with our values.</p>
+
+<p class="hiddenPara" id="hPara6">Gratitude: Stoicism encourages us to cultivate gratitude for the present moment. By appreciating what we have rather than longing for what we lack, we can find contentment and inner peace.</p>
+
+<p class="hiddenPara" id="hPara7">Virtuous Living: The pursuit of virtue is at the core of Stoic philosophy. By striving to be better versions of ourselves, we can lead lives of integrity and moral character. This not only benefits us individually but also contributes to a more just and compassionate society.</p>
+
+<p class="hiddenPara" id="hPara8">Conclusion
+
+Stoicism offers a timeless guide to living a life of purpose, resilience, and inner peace. It reminds us that true happiness is not found in external circumstances but in our ability to lead virtuous lives. By embracing Stoic principles, we can navigate life's uncertainties with grace, forge enduring character, and discover profound fulfillment in the process.
+
+In a world that often measures success by material wealth or fleeting pleasures, Stoicism redirects our attention to the enduring values of character and integrity. It challenges us to lead lives of meaning and virtue, ultimately contributing to our own well-being and the betterment of society. Stoicism, it appears, is not just a relic of the past but a beacon of wisdom for contemporary living.</p>
+            </div>
+            <button id="hideButton" class="toggleView" onclick="showLess()">Show Less</button>
+        </div>
+<div class="right_content">
+   
+   <div class="trendingSec">
+    <div class="trendingTitle">
+       <img src="trending.png">
+        Trending on Reader's Corner
+    </div>
+    <div class="trendingChart">
+<div class="trendingGrid">
+    <div class="topicInfo">
+        <div class="topicAuthor">
+            Judd Antin
+        </div>
+        <div class="topicName">
+            What We're Reading: When you talk about AI,context matters
+        </div>
+        <div class="topicDesc">
+            When you say 'AI', what are you talking about?
+        </div>
+    </div>
+    <div class="topicImg">
+        <img src="reading.jpg">
+    </div>
+</div>
+<div class="trendingGrid">
+    <div class="topicInfo">
+        <div class="topicAuthor">
+            Christina Hughes
+        </div>
+        <div class="topicName">
+            Leadership is a Research Project
+        </div>
+        <div class="topicDesc">
+            The best leaders are tireless investigators of the humans around them. More important than vision and intuition is curiousity and ...
+        </div>
+    </div>
+    <div class="topicImg">
+        <img src="leadership.jpg">
+    </div>
+</div><div class="trendingGrid">
+    <div class="topicInfo">
+        <div class="topicAuthor">
+            Daniella Dick
+        </div>
+        <div class="topicName">
+            I took up karate in my late 40's
+        </div>
+        <div class="topicDesc">
+            Being this bad at something is liberating.
+        </div>
+    </div>
+    <div class="topicImg">
+        <img src="karate.jpg">
+    </div>
+</div><div class="trendingGrid">
+    <div class="topicInfo">
+        <div class="topicAuthor">
+            Fredrick M.Hess
+        </div>
+        <div class="topicName">
+           AI Isn't the Problem. It's How We Use It, Especially in Schools
+        </div>
+        <div class="topicDesc">
+            In "Straight Talk with Rick and Jal," Harvard University's Jal Mehta and I examine some of the reforms and enthusiasms that...
+        </div>
+    </div>
+    <div class="topicImg">
+        <img src="ai.jpeg">
+    </div>
+</div><div class="trendingGrid">
+    <div class="topicInfo">
+        <div class="topicAuthor">
+            Jude Ellison S. Doyle
+        </div>
+        <div class="topicName">
+            The "Male Loneliness Epidemic" Does Not Exist
+        </div>
+        <div class="topicDesc">
+            The media panic around "male loneliness" is driven by cherry-picked statistics and sexism. Now , that' sad.
+        </div>
+    </div>
+    <div class="topicImg">
+        <img src="male.jpg">
+    </div>
+</div>
+    </div>
+   </div>
+   <div class="discoverSec">
+    <div class="discoverTitle">
+        Discover more of what matters to you
+    </div>
+    <div class="discoverGrid">
+        <div>Programming</div>
+        <div>Data Science</div>
+        <div>Technology</div>
+        <div>Self Improvement</div>
+        <div>Writing</div>
+        <div>Relationships</div>
+        <div>Machine Learning</div>
+        <div>Productivity</div>
+        <div>Politics</div>
+    </div>
+   </div>
+</div>
+    </div>
+
+    <div class="footer">
+        &reg 2023 Reader's Corner 
+    </div>
+</body>
+
+<script>
+    let showMore=()=>{
+        hPara1.style.display='block';
+        hPara2.style.display='block';
+        hPara3.style.display='block';
+        hPara4.style.display='block';
+        hPara5.style.display='block';
+        hPara6.style.display='block';
+        hPara7.style.display='block';
+        hPara8.style.display='block';
+        showButton.style.display='none';
+        hideButton.style.display='block';
+        showButton.style.boxShadow = '0vw -5px 4px rgba(255, 255, 255, 0.5)';
+    }
+    let showLess=()=>{
+        hPara1.style.display='none';
+        hPara2.style.display='none';
+        hPara3.style.display='none';
+        hPara4.style.display='none';
+        hPara5.style.display='none';
+        hPara6.style.display='none';
+        hPara7.style.display='none';
+        hPara8.style.display='none';
+        showButton.style.display='block';
+        hideButton.style.display='none';
+        showButton.style.boxShadow = '0vw -5px 4px rgba(255, 255, 255, 0.5)';
+    }
+
+    let toggleMenu=()=>{
+        if(hamMenu.style.display!='none')
+        hamMenu.style.display='none';
+        else if(hamMenu.style.display=='none')
+        hamMenu.style.display='flex';
+    }
+
+    let loginMenu=()=>{ if(loginBar.style.display!='none')
+        loginBar.style.display='none';
+        else if(loginBar.style.display=='none')
+        loginBar.style.display='flex';
+       
+    }
+   let  showSignUpBox=()=>{
+    if(loginBox.style.display!='none')
+       { loginBox.style.display='none';
+    signinBox.style.display='flex';
+    signupButton.style.backgroundColor='gold'
+            signupButton.style.color='black'
+    loginButton.style.backgroundColor='rgba(0, 0, 0, 0.76)' 
+    loginButton.style.color='white'}
+        else if(loginBox.style.display=='none')
+        {loginBox.style.display='flex';
+        signinBox.style.display='none';
+        loginButton.style.backgroundColor='gold'
+            loginButton.style.color='black'
+            signupButton.style.backgroundColor='rgba(0, 0, 0, 0.76)' 
+    signupButton.style.color='white'
+    }
+   }
+let showSignInBox=()=>{
+    if(signinBox.style.display!='none')
+       { signinBox.style.display='none';
+       signupButton.style.backgroundColor='rgba(0, 0, 0, 0.76)' 
+    signupButton.style.color='white'
+    loginBox.style.display='flex';
+    loginButton.style.backgroundColor='gold'
+            loginButton.style.color='black'}
+        else if(signinBox.style.display=='none')
+        {signinBox.style.display='flex';
+        signupButton.style.backgroundColor='gold'
+            signupButton.style.color='black'
+        loginBox.style.display='none';
+        loginButton.style.backgroundColor='rgba(0, 0, 0, 0.76)' 
+    loginButton.style.color='white'
+    }
+}
+</script>
+</html>
